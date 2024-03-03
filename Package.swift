@@ -78,7 +78,8 @@ let package = Package(
 
             cSettings: [
                 .headerSearchPath("mlx"),
-                .headerSearchPath("include/mlx-c"),
+                .headerSearchPath("include/mlx-c")
+                .unsafeOptions(["-O3"]),
             ],
 
             cxxSettings: [
